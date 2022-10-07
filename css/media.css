@@ -1,0 +1,198 @@
+/* for meduim screen */
+@media (max-width: 896px) {
+  #ido {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  header p {
+      justify-content: center;
+  }
+  #ido .icanone i {
+      font-size: 20px;
+      align-self: flex-start;
+      align-items: flex-start;
+  }
+  #ido {
+      align-items: flex-start;
+      justify-content: space-evenly;
+  }
+  #skils {
+      align-items: center;
+      justify-content: center;
+  }
+
+  #protofilo h2 {
+      justify-items: center;
+      margin: 0;
+  }
+  #imgbg img {
+    display: none;
+  }
+  footer {
+      bottom: 0%;
+  }
+  
+  .btncv {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: fit-content;
+    gap: 2%;
+    grid-template-areas:
+        "nav nav nav nav nav nav nav"
+        "hd hd hd hd hd hd hd"
+        " ido ido ido ido ido ido ido"
+        "sk sk sk sk sk sk  sk"
+        "pf pf pf pf pf pf pf"
+        "ft ft ft ft ft ft ft";
+}
+h2 {
+    font-size: 32px;
+    align-self: center;
+}
+}
+
+/* for mobile devaice */
+
+@media (max-width: 480px) {
+  #nav {
+      justify-content: space-evenly;
+      gap: 5%;
+  }
+  #ido {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+  #ido .icanone {
+      text-align: center;
+  }
+  header {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  header p {
+      text-align: center;
+  }
+  #ido .icanone i {
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+  }
+  #ido {
+      justify-content: center;
+  }
+  #skils {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+  }
+  #skils button {
+      width: 150px;
+  }
+  #protofilo {
+      flex-direction: column;
+  }
+  #protofilo .img-card {
+      width: 100%;
+  }
+  #protofilo figcaption {
+      text-align: center;
+  }
+  #protofilo h2 {
+      text-align: center;
+  }
+  #imgbg img {
+      display: none;
+  }
+  .container {
+      width: fit-content;
+      gap: 2%;
+      grid-template-areas:
+          "nav nav nav nav nav nav nav"
+          "hd hd hd hd hd hd hd"
+          " ido ido ido ido ido ido ido"
+          "sk sk sk sk sk sk  sk"
+          "pf pf pf pf pf pf pf"
+          "ft ft ft ft ft ft ft";
+  }
+  h2 {
+      font-size: 32px;
+      align-self: center;
+  }
+}
+
+/* for large screen*/
+@media (min-width: 1300px) {
+  .container {
+      width: auto;
+      gap: 2%;
+  }
+  #nav {
+      justify-content: space-evenly;
+      gap: 5%;
+  }
+  #ido {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+  }
+  #ido h2 {
+      align-self: center;
+  }
+  #ido .icanone {
+      text-align: center;
+  }
+  header {
+      justify-content: space-evenly;
+  }
+  header p {
+      text-align: center;
+      font-size: large;
+  }
+  header h1 {
+      font-size: 40px;
+      margin: 0%;
+  }
+  #ido .icanone i {
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+  }
+  #ido {
+      justify-content: center;
+  }
+  #skils {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+  }
+  #skils h2 {
+      align-self: center;
+  }
+  #skils button {
+      width: 180px;
+  }
+  #protofilo {
+      flex-direction: row;
+  }
+
+  #protofilo .img-card {
+      width: 100%;
+  }
+  #protofilo figcaption {
+      text-align: center;
+  }
+  #protofilo h2 {
+      text-align: center;
+  }
+  body {
+      font-size: 32px;
+  }
+}

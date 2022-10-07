@@ -1,0 +1,109 @@
+@import "imagesgallary.css";
+@import "footer.css";
+@import "body.css";
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav nav nav nav nav"
+        "ga ga ga ga ga ga ga"
+        "ft ft ft ft ft ft ft";
+    grid-template-columns: repeat(2, 270px);
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+.box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+#nav {
+    grid-area: nav;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #b3b3b3;
+    gap: 5%;
+}
+#nav a {
+    text-decoration: none;
+    color: #f0f2f0;
+    float: right;
+}
+#nav a:hover {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+#gallary {
+    grid-area: ga;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    flex: 1;
+}
+#gallary img {
+    width: 100%;
+}
+#gallary figcaption {
+    color: #ffff;
+}
+.info {
+    position: sticky;
+    bottom: 10px;
+    line-height: 1px;
+    text-align: center;
+    opacity: 0.6;
+    background-color: white;
+    color: #525c65;
+}
+.info h6 a {
+    color: #a6a5a5;
+}
+
+
+/* for meduim screen */
+@media (max-width: 896px) {
+    #gallary {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    #gallary img {
+        width: 80%;
+    }
+    #nav {
+        justify-content: space-evenly;
+        gap: 5%;
+    }
+
+}
+
+/* for mobile devaice */
+@media (max-width: 480px) {
+    #gallary {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    #nav {
+        justify-content: space-evenly;
+        gap: 5%;
+    }
+    #gallary img {
+        width: 50%;
+    }
+    .info{
+        line-height: 0px;
+    }
+}
+
+/* for large screen*/
+@media (max-width: 1300px) {
+    #gallary {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    #gallary img {
+        width: 80%;
+    }
+}

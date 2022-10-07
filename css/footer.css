@@ -1,0 +1,17 @@
+footer {
+  grid-area: ft;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgb(134, 129, 138);
+  color: #a6a5a5;
+}
+footer a {
+  margin-right: 10px;
+  color: rgb(106 99 111);
+}
+footer a:hover {
+  color: #fffedf;
+}
+footer h4 {
+  color: rgb(106 99 111);
+}

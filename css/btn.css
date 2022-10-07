@@ -1,0 +1,28 @@
+.btncv {
+  color: #ffffff;
+  font-size: 13px;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  border: 1px solid#b3b3b3;
+  color: #ced3df;
+}
+.btncv:hover {
+  background-color: #fffedf;
+  color: rgb(106 99 111);
+}
+#skils button {
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid#fffedf;
+  font-size: 25px;
+  background: rgb(106 99 111);
+  color: #ced3df;
+  border: 1px solid #b3b3b3;
+}
+#skils button:hover {
+  background-color: #fffedf;
+  color: rgb(106 99 111);
+  text-decoration: none;
+}

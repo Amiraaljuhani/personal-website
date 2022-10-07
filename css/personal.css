@@ -1,0 +1,105 @@
+@import "media.css";
+@import "images.css";
+@import "btn.css";
+@import "footer.css";
+@import "body.css";
+.container {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav nav nav nav nav" " hd hd hd hd hd img img" " ido ido ido ido ido ido ido"
+        "sk sk sk sk sk sk sk" "pf pf pf pf pf pf pf" "ft ft ft ft ft ft ft";
+    grid-template-rows: (auto, 1fr);
+    font-weight: bold;
+    font-size: 15px;
+    gap: 10%;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#nav {
+    grid-area: nav;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    border-bottom: 1px solid #b3b3b3;
+}
+#nav a {
+    text-decoration: none;
+    color: #f0f2f0;
+    float: right;
+}
+#nav a:hover {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+header {
+    grid-area: hd;
+    display: flex;
+}
+header h1 {
+    margin: 10%;
+}
+header p {
+    align-self: center;
+}
+#imgbg {
+    grid-area: img;
+}
+#ido {
+    grid-area: ido;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#ido h2 {
+    margin-left: 45px;
+}
+.icanone {
+    flex: 1;
+}
+.icanone i {
+    color: #b3b3b3;
+    align-self: center;
+    align-items: center;
+}
+#skils {
+    grid-area: sk;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+}
+#protofilo {
+    grid-area: pf;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#protofilo h2 {
+    margin-left: 45px;
+}
+#protofilo figcaption {
+    color: #a6a5a5;
+    text-align: center;
+}
+#protofilo a {
+    color: #a6a5a5;
+    text-decoration: none;
+}
+p,
+h1,
+h2,
+h3 {
+    color: #fffedf;
+}
+p {
+    font-size: 20px;
+}
+h3 {
+    color: #b3b3b3;
+    font-size: 30px;
+}
